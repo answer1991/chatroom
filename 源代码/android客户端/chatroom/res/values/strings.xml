@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, LoadActivity!</string>
+    <string name="app_name">陈俊的聊天室</string>
+    <string name = "LoadActivityStr">请先登录</string>
+    <string name = "IpaddrStr">服务器地址</string>
+    <string name = "UsernameStr">用户名</string>
+    <string name = "LoginBtnStr">登录</string>
+    <string name = "LeaveBtnStr">离开</string>
+    <string name = "ChatListStr">聊天记录</string>
+    <string name = "UserListStr">在线用户列表</string>
+    <string name = "IsPrivateStr">私聊</string>
+    <string name = "ToUserStr">私聊对象用户名</string>
+    <string name = "SendBtnStr">发送</string>
+    <string name = "ClearBtnStr">清空记录</string>
+    <string name = "CopyRight">版权所有:陈俊(zet) answer1991.chen@gmail.com</string>
+</resources>

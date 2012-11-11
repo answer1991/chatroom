@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+   
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight = "1"
+    android:layout_marginBottom = "3dip"
+    > 	
+    
+   	 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	 	android:orientation="vertical"
+   	 	android:layout_width = "fill_parent"
+	 	android:layout_height = "fill_parent"
+	 	android:layout_weight = "1"
+	 	android:layout_marginRight = "3dip"
+   		 > 	
+   		 	<TextView
+   		 		android:layout_width = "fill_parent"
+   		 		android:layout_height = "wrap_content"
+   		 		android:text = "@string/ChatListStr"
+   		 	/>
+			<EditText
+				android:id = "@+id/chatlist"
+				android:layout_width = "fill_parent"
+				android:layout_height = "fill_parent"
+				android:background = "#FFFFFF"
+				android:paddingTop = "0px"
+				android:gravity = "top"
+				android:textColor= "#000000"
+				android:editable = "false"
+				android:scrollHorizontally = "false"
+				android:scrollbarAlwaysDrawVerticalTrack = "true"
+				android:textSize = "15dip"
+				/>
+		</LinearLayout>
+		
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	 	android:orientation="vertical"
+   	 	android:layout_width = "fill_parent"
+	 	android:layout_height = "fill_parent"
+	 	android:layout_weight = "2"
+	 	android:layout_marginLeft = "3dip"
+   		 > 	
+   		 	<TextView
+   		 		android:layout_width = "fill_parent"
+   		 		android:layout_height = "wrap_content"
+   		 		android:text = "@string/UserListStr"
+   		 	/>
+			<EditText
+				android:id = "@+id/userlist"
+				android:layout_width = "fill_parent"
+				android:layout_height = "fill_parent"
+				android:background = "#FFFFFF"
+				android:paddingTop = "0px"
+				android:gravity = "top"
+				android:textColor= "#000000"
+				android:editable = "false"
+				android:scrollHorizontally = "false"
+				android:scrollbarAlwaysDrawVerticalTrack = "true"
+				android:textSize = "13dip"
+				/>
+		</LinearLayout>
+	</LinearLayout> 
+		
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight = "3"
+  	>
+    
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight = "1"
+    	>  			
+    	<EditText
+    		android:id = "@+id/messageText"
+    		android:layout_width = "fill_parent"
+    		android:layout_height = "fill_parent"
+    		android:layout_weight = "1"
+    		android:paddingTop = "0px"
+    		android:textColor= "#000000"
+    		android:singleLine = "false"
+    		android:gravity = "top"
+			android:scrollHorizontally = "false"
+    	/>
+    	
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_weight = "2">   	
+    	<Button
+    		android:id = "@+id/clearBtn"
+    		android:layout_width = "fill_parent"
+    		android:layout_height = "fill_parent"
+    		android:layout_weight = "1"
+    		android:text = "@string/ClearBtnStr"
+    	/>
+    	<Button
+    		android:id = "@+id/sendBtn"
+    		android:layout_width = "fill_parent"
+    		android:layout_height = "fill_parent"
+    		android:layout_weight = "1"
+    		android:textColor = "#FF7F00"
+    		android:text = "@string/SendBtnStr"
+    	/>  
+    	</LinearLayout>
+ 		</LinearLayout>
+    		
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:orientation="horizontal"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:layout_weight = "2"
+    		android:layout_marginTop = "3dip">
+    		<CheckBox
+    			android:id = "@+id/IsPrivate"
+    			android:layout_width = "fill_parent"
+    			android:layout_height = "fill_parent"
+    			android:layout_weight = "1"
+    			android:text = "@string/IsPrivateStr"
+    			android:textSize = "13dip"
+    		/>
+    		<TextView
+    			android:layout_width = "fill_parent"
+    			android:layout_height = "fill_parent"
+    			android:layout_weight = "1"
+    			android:text = "@string/ToUserStr"
+    			android:textSize = "13dip"
+    			android:gravity = "center"
+    		/>
+    		<EditText
+    			android:id = "@+id/toUserText"
+    			android:layout_width = "fill_parent"
+    			android:layout_height = "fill_parent"
+    			android:layout_weight = "1"
+    			android:background = "#FFFFFF"
+    			android:textColor= "#000000"
+    			android:singleLine = "true"
+    		/>
+    	</LinearLayout>
+    	
+    			 
+	</LinearLayout>
+</LinearLayout>

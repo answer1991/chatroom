@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<TextView  
+	android:id = "@+id/LoadActivityStr"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/LoadActivityStr"
+    />
+ 
+<TextView
+	android:id = "@+id/IpaddrStr"
+	android:layout_width = "fill_parent"
+	android:layout_height = "wrap_content"
+	android:text = "@string/IpaddrStr"
+	/>
+    	
+ <EditText
+ 	android:id = "@+id/IpaddrEdit"
+ 	android:layout_width = "fill_parent"
+ 	android:layout_height = "wrap_content"
+	/> 
+	
+ <TextView
+ 	android:id = "@+id/UsernameStr"
+ 	android:layout_width = "fill_parent"
+ 	android:layout_height = "wrap_content"
+ 	android:text = "@string/UsernameStr"
+ 	/>
+ 
+ <EditText
+ 	android:id = "@+id/UsernameEdit"
+ 	android:layout_width = "fill_parent"
+ 	android:layout_height = "wrap_content"
+	/> 
+	
+<Button
+	android:id = "@+id/LoginBtn"
+	android:layout_width = "fill_parent"
+ 	android:layout_height = "wrap_content"
+ 	android:text = "@string/LoginBtnStr"
+	/> 
+	
+<TextView
+	android:layout_width = "fill_parent"
+ 	android:layout_height = "wrap_content"
+ 	android:textColor = "#0000FF"
+ 	android:text = "@string/CopyRight"
+	/> 
+	
+</LinearLayout>

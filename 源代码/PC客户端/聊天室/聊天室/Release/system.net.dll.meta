@@ -1,0 +1,691 @@
+  System.Net.resources - Embedded, ContainedInManifestFile, 
+Assembly System.Net, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Class System.Net.IPEndPointCollection: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Collections.ObjectModel.Collection`1[System.Net.IPEndPoint]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.Net.PeerToPeer.Cloud: AutoLayout, AnsiClass, Class, Public, Serializable
+  Interfaces:
+    System.Runtime.Serialization.ISerializable
+    System.IEquatable`1[System.Net.PeerToPeer.Cloud]
+  Fields:
+    System.Net.PeerToPeer.Cloud Available : Public, Static, InitOnly
+    System.Net.PeerToPeer.Cloud AllLinkLocal : Public, Static, InitOnly
+  Properties:
+    System.String Name 'get ' : 
+    System.Net.PeerToPeer.PnrpScope Scope 'get ' : 
+    Int32 ScopeId 'get ' : 
+    System.Net.PeerToPeer.Cloud Global 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_Scope(): PrivateScope, Public, HideBySig, SpecialName
+    get_ScopeId(): PrivateScope, Public, HideBySig, SpecialName
+    get_Global(): PrivateScope, Public, Static, HideBySig, SpecialName
+    GetCloudByName(String): PrivateScope, Public, Static, HideBySig
+    GetAvailableClouds(): PrivateScope, Public, Static, HideBySig
+    Equals(Cloud): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Net.PeerToPeer.CloudCollection: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Collections.ObjectModel.Collection`1[System.Net.PeerToPeer.Cloud]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.Net.PeerToPeer.PeerName: AutoLayout, AnsiClass, Class, Public, Serializable
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Net.PeerToPeer.PeerNameType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Runtime.Serialization.ISerializable
+    System.IEquatable`1[System.Net.PeerToPeer.PeerName]
+  Properties:
+    System.String Authority 'get ' : 
+    System.String Classifier 'get ' : 
+    System.String PeerHostName 'get ' : 
+    Boolean IsSecured 'get ' : 
+  Methods:
+    CreateFromPeerHostName(String): PrivateScope, Public, Static, HideBySig
+    CreateRelativePeerName(PeerName, String): PrivateScope, Public, Static, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(PeerName): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    get_Authority(): PrivateScope, Public, HideBySig, SpecialName
+    get_Classifier(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerHostName(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsSecured(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.PeerNameRecord: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Runtime.Serialization.ISerializable
+  Properties:
+    System.Net.PeerToPeer.PeerName PeerName 'get set' : 
+    System.Net.IPEndPointCollection EndPointCollection 'get ' : 
+    System.String Comment 'get set' : 
+    Byte[] Data 'get set' : 
+  Methods:
+    get_PeerName(): PrivateScope, Public, HideBySig, SpecialName
+    set_PeerName(PeerName): PrivateScope, Public, HideBySig, SpecialName
+    get_EndPointCollection(): PrivateScope, Public, HideBySig, SpecialName
+    get_Comment(): PrivateScope, Public, HideBySig, SpecialName
+    set_Comment(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Data(): PrivateScope, Public, HideBySig, SpecialName
+    set_Data(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.PeerNameRecordCollection: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Collections.ObjectModel.Collection`1[System.Net.PeerToPeer.PeerNameRecord]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.Net.PeerToPeer.PeerNameRegistration: AutoLayout, AnsiClass, Class, Public, Serializable
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Net.PeerToPeer.PeerName, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Net.PeerToPeer.PeerName, Int32, System.Net.PeerToPeer.Cloud): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+    System.Runtime.Serialization.ISerializable
+  Properties:
+    Int32 Port 'get set' : 
+    System.Net.PeerToPeer.PeerName PeerName 'get set' : 
+    System.Net.IPEndPointCollection EndPointCollection 'get ' : 
+    System.Net.PeerToPeer.Cloud Cloud 'get set' : 
+    System.String Comment 'get set' : 
+    Byte[] Data 'get set' : 
+    Boolean UseAutoEndPointSelection 'get set' : 
+  Methods:
+    get_Port(): PrivateScope, Public, HideBySig, SpecialName
+    set_Port(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerName(): PrivateScope, Public, HideBySig, SpecialName
+    set_PeerName(PeerName): PrivateScope, Public, HideBySig, SpecialName
+    get_EndPointCollection(): PrivateScope, Public, HideBySig, SpecialName
+    get_Cloud(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cloud(Cloud): PrivateScope, Public, HideBySig, SpecialName
+    get_Comment(): PrivateScope, Public, HideBySig, SpecialName
+    set_Comment(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Data(): PrivateScope, Public, HideBySig, SpecialName
+    set_Data(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_UseAutoEndPointSelection(): PrivateScope, Public, HideBySig, SpecialName
+    set_UseAutoEndPointSelection(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    IsRegistered(): PrivateScope, Public, HideBySig
+    Start(): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, HideBySig
+    Stop(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Net.PeerToPeer.ResolveProgressChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.ProgressChangedEventArgs
+    Void .ctor(System.Net.PeerToPeer.PeerNameRecord, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Net.PeerToPeer.PeerNameRecord PeerNameRecord 'get ' : 
+  Methods:
+    get_PeerNameRecord(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.ResolveCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+    Void .ctor(System.Net.PeerToPeer.PeerNameRecordCollection, System.Exception, Boolean, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Net.PeerToPeer.PeerNameRecordCollection PeerNameRecordCollection 'get ' : 
+  Methods:
+    get_PeerNameRecordCollection(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.PeerNameResolver: AutoLayout, AnsiClass, Class, Public
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    System.EventHandler`1[System.Net.PeerToPeer.ResolveProgressChangedEventArgs] ResolveProgressChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.ResolveCompletedEventArgs] ResolveCompleted: 
+  Methods:
+    add_ResolveProgressChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResolveProgressChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_ResolveCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResolveCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    Resolve(PeerName): PrivateScope, Public, HideBySig
+    Resolve(PeerName, Cloud): PrivateScope, Public, HideBySig
+    Resolve(PeerName, Int32): PrivateScope, Public, HideBySig
+    Resolve(PeerName, Cloud, Int32): PrivateScope, Public, HideBySig
+    ResolveAsync(PeerName, Object): PrivateScope, Public, HideBySig, HasSecurity
+    ResolveAsync(PeerName, Cloud, Object): PrivateScope, Public, HideBySig, HasSecurity
+    ResolveAsync(PeerName, Int32, Object): PrivateScope, Public, HideBySig, HasSecurity
+    ResolveAsync(PeerName, Cloud, Int32, Object): PrivateScope, Public, HideBySig, HasSecurity
+    ResolveAsyncCancel(Object): PrivateScope, Public, HideBySig
+Struct System.Net.PeerToPeer.PeerNameType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Net.PeerToPeer.PeerNameType Secured = 0 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.PeerNameType Unsecured = 1 : Public, Static, Literal, HasDefault
+Class System.Net.PeerToPeer.PeerToPeerException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetObjectData(SerializationInfo, StreamingContext): PrivateScope, Public, Virtual, HideBySig, HasSecurity
+Class System.Net.PeerToPeer.PnrpPermissionAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :System.Security.Permissions.CodeAccessSecurityAttribute
+    Void .ctor(System.Security.Permissions.SecurityAction): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreatePermission(): PrivateScope, Public, Virtual, HideBySig
+Class System.Net.PeerToPeer.PnrpPermission: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :System.Security.CodeAccessPermission
+    Void .ctor(System.Security.Permissions.PermissionState): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Security.Permissions.IUnrestrictedPermission
+  Methods:
+    IsUnrestricted(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Copy(): PrivateScope, Public, Virtual, HideBySig
+    Union(IPermission): PrivateScope, Public, Virtual, HideBySig
+    Intersect(IPermission): PrivateScope, Public, Virtual, HideBySig
+    IsSubsetOf(IPermission): PrivateScope, Public, Virtual, HideBySig
+    FromXml(SecurityElement): PrivateScope, Public, Virtual, HideBySig
+    ToXml(): PrivateScope, Public, Virtual, HideBySig
+Struct System.Net.PeerToPeer.PnrpScope: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Net.PeerToPeer.PnrpScope All = 0 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.PnrpScope Global = 1 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.PnrpScope SiteLocal = 2 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.PnrpScope LinkLocal = 3 : Public, Static, Literal, HasDefault
+Struct System.Net.PeerToPeer.Collaboration.PeerPresenceStatus: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Net.PeerToPeer.Collaboration.PeerPresenceStatus Offline = 0 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerPresenceStatus OutToLunch = 1 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerPresenceStatus Away = 2 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerPresenceStatus BeRightBack = 3 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerPresenceStatus Idle = 4 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerPresenceStatus Busy = 5 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerPresenceStatus OnThePhone = 6 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerPresenceStatus Online = 7 : Public, Static, Literal, HasDefault
+Struct System.Net.PeerToPeer.Collaboration.PeerScope: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Net.PeerToPeer.Collaboration.PeerScope None = 0 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerScope NearMe = 1 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerScope Internet = 2 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerScope All = 3 : Public, Static, Literal, HasDefault
+Struct System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType CurrentUser = 0 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType AllUsers = 1 : Public, Static, Literal, HasDefault
+Struct System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType Declined = 0 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType Accepted = 1 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType Expired = 2 : Public, Static, Literal, HasDefault
+Struct System.Net.PeerToPeer.Collaboration.PeerChangeType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Net.PeerToPeer.Collaboration.PeerChangeType Added = 0 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerChangeType Deleted = 1 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.PeerChangeType Updated = 2 : Public, Static, Literal, HasDefault
+Struct System.Net.PeerToPeer.Collaboration.SubscriptionType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.Net.PeerToPeer.Collaboration.SubscriptionType Blocked = 0 : Public, Static, Literal, HasDefault
+    System.Net.PeerToPeer.Collaboration.SubscriptionType Allowed = 1 : Public, Static, Literal, HasDefault
+Class System.Net.PeerToPeer.Collaboration.CreateContactCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerContact PeerContact 'get ' : 
+  Methods:
+    get_PeerContact(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerContact PeerContact 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerChangeType PeerChangeType 'get ' : 
+  Methods:
+    get_PeerEndPoint(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerContact(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerChangeType(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.ContactManager: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerContact LocalContact 'get ' : 
+    System.ComponentModel.ISynchronizeInvoke SynchronizingObject 'get set' : 
+  Events:
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.SubscriptionListChangedEventArgs] SubscriptionListChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.NameChangedEventArgs] NameChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs] PresenceChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs] ApplicationChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs] ObjectChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.CreateContactCompletedEventArgs] CreateContactCompleted: 
+  Methods:
+    get_LocalContact(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SynchronizingObject(): PrivateScope, Public, HideBySig, SpecialName
+    set_SynchronizingObject(ISynchronizeInvoke): PrivateScope, Public, HideBySig, SpecialName
+    add_SubscriptionListChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_SubscriptionListChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_NameChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_NameChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PresenceChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PresenceChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_ApplicationChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ApplicationChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_ObjectChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ObjectChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    GetContacts(): PrivateScope, Public, HideBySig
+    GetContact(PeerName): PrivateScope, Public, HideBySig
+    CreateContact(PeerNearMe): PrivateScope, Public, HideBySig
+    add_CreateContactCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CreateContactCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    CreateContactAsync(PeerNearMe, Object): PrivateScope, Public, HideBySig
+    AddContact(PeerContact): PrivateScope, Public, HideBySig
+    DeleteContact(PeerContact): PrivateScope, Public, HideBySig
+    DeleteContact(PeerName): PrivateScope, Public, HideBySig
+    UpdateContact(PeerContact): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Net.PeerToPeer.Collaboration.Peer: AutoLayout, AnsiClass, Class, Public, Abstract, Serializable, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+    System.IEquatable`1[System.Net.PeerToPeer.Collaboration.Peer]
+    System.Runtime.Serialization.ISerializable
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerEndPointCollection PeerEndPoints 'get ' : 
+    Boolean IsOnline 'get ' : 
+    System.ComponentModel.ISynchronizeInvoke SynchronizingObject 'get set' : 
+  Events:
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs] InviteCompleted: 
+  Methods:
+    get_PeerEndPoints(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsOnline(): PrivateScope, Public, HideBySig, SpecialName
+    get_SynchronizingObject(): PrivateScope, Public, HideBySig, SpecialName
+    set_SynchronizingObject(ISynchronizeInvoke): PrivateScope, Public, HideBySig, SpecialName
+    GetPresenceInfo(PeerEndPoint): PrivateScope, Public, HideBySig
+    GetObjects(): PrivateScope, Public, HideBySig
+    GetObjects(Guid): PrivateScope, Public, HideBySig
+    Invite(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Invite(PeerApplication, String, Byte[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_InviteCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_InviteCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    InviteAsync(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InviteAsync(PeerApplication, String, Byte[], Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InviteAsyncCancel(Object): PrivateScope, Public, HideBySig
+    Equals(Peer): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Net.PeerToPeer.Collaboration.PeerContact: AutoLayout, AnsiClass, Class, Public, Serializable
+  :System.Net.PeerToPeer.Collaboration.Peer
+  Interfaces:
+    System.IEquatable`1[System.Net.PeerToPeer.Collaboration.PeerContact]
+  Properties:
+    System.Net.PeerToPeer.PeerName PeerName 'get set' : 
+    System.String Nickname 'get set' : 
+    System.String DisplayName 'get set' : 
+    System.Net.Mail.MailAddress EmailAddress 'get set' : 
+    System.Net.PeerToPeer.Collaboration.SubscriptionType SubscribeAllowed 'get set' : 
+    Boolean IsSubscribed 'get set' : 
+    System.Security.Cryptography.X509Certificates.X509Certificate2 Credentials 'get set' : 
+    System.Net.PeerToPeer.Collaboration.PeerEndPointCollection PeerEndPoints 'get ' : 
+  Events:
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs] SubscribeCompleted: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs] ApplicationChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs] ObjectChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs] PresenceChanged: 
+  Methods:
+    Equals(PeerContact): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object, Object): PrivateScope, Public, Static, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    get_PeerName(): PrivateScope, Public, HideBySig, SpecialName
+    get_Nickname(): PrivateScope, Public, HideBySig, SpecialName
+    set_Nickname(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DisplayName(): PrivateScope, Public, HideBySig, SpecialName
+    set_DisplayName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_EmailAddress(): PrivateScope, Public, HideBySig, SpecialName
+    set_EmailAddress(MailAddress): PrivateScope, Public, HideBySig, SpecialName
+    get_SubscribeAllowed(): PrivateScope, Public, HideBySig, SpecialName
+    set_SubscribeAllowed(SubscriptionType): PrivateScope, Public, HideBySig, SpecialName
+    get_IsSubscribed(): PrivateScope, Public, HideBySig, SpecialName
+    get_Credentials(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerEndPoints(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ToXml(): PrivateScope, Public, HideBySig
+    FromXml(String): PrivateScope, Public, Static, HideBySig
+    Subscribe(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_SubscribeCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_SubscribeCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    SubscribeAsync(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Unsubscribe(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Invite(): PrivateScope, Public, Virtual, HideBySig
+    Invite(PeerApplication, String, Byte[]): PrivateScope, Public, Virtual, HideBySig
+    Invite(PeerEndPoint): PrivateScope, Public, HideBySig
+    Invite(PeerEndPoint, PeerApplication, String, Byte[]): PrivateScope, Public, HideBySig
+    InviteAsync(Object): PrivateScope, Public, Virtual, HideBySig
+    InviteAsync(PeerApplication, String, Byte[], Object): PrivateScope, Public, Virtual, HideBySig
+    InviteAsync(PeerEndPoint, Object): PrivateScope, Public, HideBySig
+    InviteAsync(PeerEndPoint, String, Byte[], PeerApplication, Object): PrivateScope, Public, HideBySig
+    GetApplications(): PrivateScope, Public, HideBySig
+    GetApplications(Guid): PrivateScope, Public, HideBySig
+    GetApplications(PeerEndPoint): PrivateScope, Public, HideBySig
+    GetApplications(PeerEndPoint, Guid): PrivateScope, Public, HideBySig
+    GetObjects(PeerEndPoint): PrivateScope, Public, HideBySig
+    GetObjects(PeerEndPoint, Guid): PrivateScope, Public, HideBySig
+    add_ApplicationChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ApplicationChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_ObjectChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ObjectChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PresenceChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PresenceChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerContact PeerContact 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerChangeType PeerChangeType 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerObject PeerObject 'get ' : 
+  Methods:
+    get_PeerEndPoint(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerContact(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerChangeType(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerObject(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerContact PeerContact 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerChangeType PeerChangeType 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerPresenceInfo PeerPresenceInfo 'get ' : 
+  Methods:
+    get_PeerEndPoint(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerContact(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerChangeType(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerPresenceInfo(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.SubscribeCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerNearMe PeerNearMe 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerContact PeerContact 'get ' : 
+  Methods:
+    get_PeerNearMe(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerContact(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint 'get ' : 
+  Methods:
+    get_PeerEndPoint(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.AsyncCompletedEventArgs
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerInvitationResponse InviteResponse 'get ' : 
+  Methods:
+    get_InviteResponse(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.PeerApplication: AutoLayout, AnsiClass, Class, Public, Serializable
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Guid, System.String, Byte[], System.String, System.String, System.Net.PeerToPeer.Collaboration.PeerScope): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+    System.IEquatable`1[System.Net.PeerToPeer.Collaboration.PeerApplication]
+    System.Runtime.Serialization.ISerializable
+  Properties:
+    System.Guid Id 'get set' : 
+    Byte[] Data 'get set' : 
+    System.String Description 'get set' : 
+    System.String Path 'get set' : 
+    System.String CommandLineArgs 'get set' : 
+    System.Net.PeerToPeer.Collaboration.PeerScope PeerScope 'get set' : 
+    System.ComponentModel.ISynchronizeInvoke SynchronizingObject 'get set' : 
+  Events:
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs] ApplicationChanged: 
+  Methods:
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    set_Id(Guid): PrivateScope, Public, HideBySig, SpecialName
+    get_Data(): PrivateScope, Public, HideBySig, SpecialName
+    set_Data(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_Description(): PrivateScope, Public, HideBySig, SpecialName
+    set_Description(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Path(): PrivateScope, Public, HideBySig, SpecialName
+    set_Path(String): PrivateScope, Public, HideBySig, SpecialName
+    get_CommandLineArgs(): PrivateScope, Public, HideBySig, SpecialName
+    set_CommandLineArgs(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerScope(): PrivateScope, Public, HideBySig, SpecialName
+    set_PeerScope(PeerScope): PrivateScope, Public, HideBySig, SpecialName
+    get_SynchronizingObject(): PrivateScope, Public, HideBySig, SpecialName
+    set_SynchronizingObject(ISynchronizeInvoke): PrivateScope, Public, HideBySig, SpecialName
+    add_ApplicationChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ApplicationChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    Equals(PeerApplication): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object, Object): PrivateScope, Public, Static, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Net.PeerToPeer.Collaboration.PeerApplicationCollection: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Collections.ObjectModel.Collection`1[System.Net.PeerToPeer.Collaboration.PeerApplication]
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerContact PeerContact 'get set' : 
+    System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint 'get set' : 
+    System.Net.PeerToPeer.Collaboration.PeerApplication PeerApplication 'get set' : 
+    Byte[] Data 'get set' : 
+    System.String Message 'get set' : 
+  Methods:
+    get_PeerContact(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerEndPoint(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerApplication(): PrivateScope, Public, HideBySig, SpecialName
+    get_Data(): PrivateScope, Public, HideBySig, SpecialName
+    get_Message(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.PeerCollaboration: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerPresenceInfo LocalPresenceInfo 'get set' : 
+    System.String LocalEndPointName 'get set' : 
+    System.Net.PeerToPeer.Collaboration.PeerScope SignInScope 'get ' : 
+    System.Net.PeerToPeer.Collaboration.ContactManager ContactManager 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo ApplicationLaunchInfo 'get ' : 
+    System.ComponentModel.ISynchronizeInvoke SynchronizingObject 'get set' : 
+  Events:
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.NameChangedEventArgs] LocalNameChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.PresenceChangedEventArgs] LocalPresenceChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs] LocalObjectChanged: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs] LocalApplicationChanged: 
+  Methods:
+    get_LocalPresenceInfo(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_LocalPresenceInfo(PeerPresenceInfo): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_LocalEndPointName(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_LocalEndPointName(String): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SignInScope(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ContactManager(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ApplicationLaunchInfo(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_SynchronizingObject(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_SynchronizingObject(ISynchronizeInvoke): PrivateScope, Public, Static, HideBySig, SpecialName
+    SignIn(PeerScope): PrivateScope, Public, Static, HideBySig
+    SignOut(PeerScope): PrivateScope, Public, Static, HideBySig
+    GetPeersNearMe(): PrivateScope, Public, Static, HideBySig
+    RegisterApplication(PeerApplication, PeerApplicationRegistrationType): PrivateScope, Public, Static, HideBySig
+    UnregisterApplication(PeerApplication, PeerApplicationRegistrationType): PrivateScope, Public, Static, HideBySig
+    GetLocalRegisteredApplications(): PrivateScope, Public, Static, HideBySig
+    GetLocalRegisteredApplications(PeerApplicationRegistrationType): PrivateScope, Public, Static, HideBySig
+    SetObject(PeerObject): PrivateScope, Public, Static, HideBySig
+    DeleteObject(PeerObject): PrivateScope, Public, Static, HideBySig
+    GetLocalSetObjects(): PrivateScope, Public, Static, HideBySig
+    add_LocalNameChanged(EventHandler`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_LocalNameChanged(EventHandler`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    add_LocalPresenceChanged(EventHandler`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_LocalPresenceChanged(EventHandler`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    add_LocalObjectChanged(EventHandler`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_LocalObjectChanged(EventHandler`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    add_LocalApplicationChanged(EventHandler`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_LocalApplicationChanged(EventHandler`1): PrivateScope, Public, Static, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.PeerCollaborationPermissionAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :System.Security.Permissions.CodeAccessSecurityAttribute
+    Void .ctor(System.Security.Permissions.SecurityAction): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreatePermission(): PrivateScope, Public, Virtual, HideBySig
+Class System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :System.Security.CodeAccessPermission
+    Void .ctor(System.Security.Permissions.PermissionState): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Security.Permissions.IUnrestrictedPermission
+  Methods:
+    IsUnrestricted(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Copy(): PrivateScope, Public, Virtual, HideBySig
+    Union(IPermission): PrivateScope, Public, Virtual, HideBySig
+    Intersect(IPermission): PrivateScope, Public, Virtual, HideBySig
+    IsSubsetOf(IPermission): PrivateScope, Public, Virtual, HideBySig
+    FromXml(SecurityElement): PrivateScope, Public, Virtual, HideBySig
+    ToXml(): PrivateScope, Public, Virtual, HideBySig
+Class System.Net.PeerToPeer.Collaboration.ApplicationChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerContact PeerContact 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerChangeType PeerChangeType 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerApplication PeerApplication 'get ' : 
+  Methods:
+    get_PeerEndPoint(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerContact(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerChangeType(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerApplication(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.PeerContactCollection: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Collections.ObjectModel.Collection`1[System.Net.PeerToPeer.Collaboration.PeerContact]
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Net.PeerToPeer.Collaboration.NameChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerContact PeerContact 'get ' : 
+    System.String Name 'get ' : 
+  Methods:
+    get_PeerEndPoint(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerContact(): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.PeerEndPoint: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Net.IPEndPoint): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Net.IPEndPoint, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+    System.IEquatable`1[System.Net.PeerToPeer.Collaboration.PeerEndPoint]
+    System.Runtime.Serialization.ISerializable
+  Properties:
+    System.String Name 'get set' : 
+    System.Net.IPEndPoint EndPoint 'get set' : 
+    System.ComponentModel.ISynchronizeInvoke SynchronizingObject 'get set' : 
+  Events:
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.NameChangedEventArgs] NameChanged: 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_EndPoint(): PrivateScope, Public, HideBySig, SpecialName
+    set_EndPoint(IPEndPoint): PrivateScope, Public, HideBySig, SpecialName
+    get_SynchronizingObject(): PrivateScope, Public, HideBySig, SpecialName
+    set_SynchronizingObject(ISynchronizeInvoke): PrivateScope, Public, HideBySig, SpecialName
+    add_NameChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_NameChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    Equals(PeerEndPoint): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object, Object): PrivateScope, Public, Static, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Net.PeerToPeer.Collaboration.PeerEndPointCollection: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Collections.ObjectModel.Collection`1[System.Net.PeerToPeer.Collaboration.PeerEndPoint]
+  Interfaces:
+    System.IEquatable`1[System.Net.PeerToPeer.Collaboration.PeerEndPointCollection]
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(PeerEndPointCollection): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Net.PeerToPeer.Collaboration.PeerInvitationResponse: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerInvitationResponseType PeerInvitationResponseType 'get set' : 
+  Methods:
+    get_PeerInvitationResponseType(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerNearMe PeerNearMe 'get ' : 
+    System.Net.PeerToPeer.Collaboration.PeerChangeType PeerChangeType 'get ' : 
+  Methods:
+    get_PeerNearMe(): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerChangeType(): PrivateScope, Public, HideBySig, SpecialName
+Class System.Net.PeerToPeer.Collaboration.PeerNearMe: AutoLayout, AnsiClass, Class, Public, Serializable
+  :System.Net.PeerToPeer.Collaboration.Peer
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[System.Net.PeerToPeer.Collaboration.PeerNearMe]
+  Properties:
+    System.String Nickname 'get set' : 
+  Events:
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs] RefreshDataCompleted: 
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.PeerNearMeChangedEventArgs] PeerNearMeChanged: 
+  Methods:
+    get_Nickname(): PrivateScope, Public, HideBySig, SpecialName
+    AddToContactManager(): PrivateScope, Public, HideBySig
+    AddToContactManager(String, String, MailAddress): PrivateScope, Public, HideBySig
+    CreateFromPeerEndPoint(PeerEndPoint): PrivateScope, Public, Static, HideBySig
+    RefreshData(): PrivateScope, Public, HideBySig
+    add_RefreshDataCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_RefreshDataCompleted(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    RefreshDataAsync(Object): PrivateScope, Public, HideBySig
+    add_PeerNearMeChanged(EventHandler`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    remove_PeerNearMeChanged(EventHandler`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    Invite(PeerApplication, String, Byte[]): PrivateScope, Public, Virtual, HideBySig
+    Invite(): PrivateScope, Public, Virtual, HideBySig
+    InviteAsync(Object): PrivateScope, Public, Virtual, HideBySig
+    InviteAsync(PeerApplication, String, Byte[], Object): PrivateScope, Public, Virtual, HideBySig
+    Equals(PeerNearMe): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object, Object): PrivateScope, Public, Static, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Net.PeerToPeer.Collaboration.PeerNearMeCollection: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Collections.ObjectModel.Collection`1[System.Net.PeerToPeer.Collaboration.PeerNearMe]
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Net.PeerToPeer.Collaboration.PeerObject: AutoLayout, AnsiClass, Class, Public, Serializable
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Guid, Byte[], System.Net.PeerToPeer.Collaboration.PeerScope): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+    System.IEquatable`1[System.Net.PeerToPeer.Collaboration.PeerObject]
+    System.Runtime.Serialization.ISerializable
+  Properties:
+    System.Guid Id 'get set' : 
+    Byte[] Data 'get set' : 
+    System.Net.PeerToPeer.Collaboration.PeerScope PeerScope 'get set' : 
+    System.ComponentModel.ISynchronizeInvoke SynchronizingObject 'get set' : 
+  Events:
+    System.EventHandler`1[System.Net.PeerToPeer.Collaboration.ObjectChangedEventArgs] ObjectChanged: 
+  Methods:
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    set_Id(Guid): PrivateScope, Public, HideBySig, SpecialName
+    get_Data(): PrivateScope, Public, HideBySig, SpecialName
+    set_Data(Byte[]): PrivateScope, Public, HideBySig, SpecialName
+    get_PeerScope(): PrivateScope, Public, HideBySig, SpecialName
+    set_PeerScope(PeerScope): PrivateScope, Public, HideBySig, SpecialName
+    get_SynchronizingObject(): PrivateScope, Public, HideBySig, SpecialName
+    set_SynchronizingObject(ISynchronizeInvoke): PrivateScope, Public, HideBySig, SpecialName
+    add_ObjectChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ObjectChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    Equals(PeerObject): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object, Object): PrivateScope, Public, Static, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class System.Net.PeerToPeer.Collaboration.PeerObjectCollection: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Collections.ObjectModel.Collection`1[System.Net.PeerToPeer.Collaboration.PeerObject]
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.Net.PeerToPeer.Collaboration.PeerPresenceInfo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Net.PeerToPeer.Collaboration.PeerPresenceStatus, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Net.PeerToPeer.Collaboration.PeerPresenceStatus PresenceStatus 'get set' : 
+    System.String DescriptiveText 'get set' : 
+  Methods:
+    get_PresenceStatus(): PrivateScope, Public, HideBySig, SpecialName
+    set_PresenceStatus(PeerPresenceStatus): PrivateScope, Public, HideBySig, SpecialName
+    get_DescriptiveText(): PrivateScope, Public, HideBySig, SpecialName
+    set_DescriptiveText(String): PrivateScope, Public, HideBySig, SpecialName
